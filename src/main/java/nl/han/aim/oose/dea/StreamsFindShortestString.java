@@ -8,7 +8,7 @@ public class StreamsFindShortestString {
 
 
         return input.stream()
-                .min(Comparator.comparing(String::length))
-                .orElse(Null);
+                .min(Comparator.comparingInt(String::length))
+                .orElse(null);
     }
 }

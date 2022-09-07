@@ -5,8 +5,9 @@ import java.util.stream.Collectors;
 
 public class StreamsCreateFullSentence {
     String createAFullSentenceFromTheList(List<String> input) {
-        // TODO: implement
 
-        return "";
+
+        return input.stream()
+                .;
     }
 }
