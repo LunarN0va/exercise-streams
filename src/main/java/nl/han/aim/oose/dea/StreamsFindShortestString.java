@@ -5,8 +5,10 @@ import java.util.List;
 
 public class StreamsFindShortestString {
     String findShortestString(List<String> input) {
-        
 
-        return "";
+
+        return input.stream()
+                .min(Comparator.comparing(String::length))
+                .orElse(Null);
     }
 }
