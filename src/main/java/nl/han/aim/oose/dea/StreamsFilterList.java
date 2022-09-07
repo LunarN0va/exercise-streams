@@ -20,9 +20,10 @@ public class StreamsFilterList {
     List<String> filterStringsThatContainOnlyNumerals(List<String> input) {
 
         List<String> output = input.stream()
-                .filter(word -> word.chars())
+                .filter(word -> word.chars().allMatch(Character::isDigit))
+                .toList();
 
-        return input;
+        return output;
 
     }
 }
