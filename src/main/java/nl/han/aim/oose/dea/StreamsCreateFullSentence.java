@@ -8,6 +8,6 @@ public class StreamsCreateFullSentence {
 
 
         return input.stream()
-                .;
+                .collect(Collectors.joining(" "));
     }
 }
