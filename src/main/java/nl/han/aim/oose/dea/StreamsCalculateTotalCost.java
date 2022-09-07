@@ -9,13 +9,13 @@ public class StreamsCalculateTotalCost {
     int calculateTotalCostOfAllProducts(List<Product> products) {
 
         return products.stream()
-                .mapToInt(Integer::intValue)
+                .mapToInt(Product::getPrice)
                 .sum();
     }
 
     int calculateTotalCostOfAllGadgets(List<Product> products) {
-        // TODO: implement
-
-        return 0;
+        return products.stream()
+                .mapToInt(Product::getPrice)
+                .sum();
     }
 }
