@@ -6,13 +6,16 @@ import java.util.stream.Collectors;
 public class StreamsFilterList {
 
     List<String> filterStringsShorterThanThreeCharacters(List<String> input) {
-        // TODO: implement
+        List<String> output = input.stream()
+                .filter(word -> word.length() < 3)
+                .toList();
 
-        return input;
+        return output;
     }
 
     List<String> filterStringsThatContainOnlyNumerals(List<String> input) {
-        // TODO: implement
+        List<String> output = input.stream()
+                .filter(word -> )
 
         return input;
     }
