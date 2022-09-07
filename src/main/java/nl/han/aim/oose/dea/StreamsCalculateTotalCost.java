@@ -15,6 +15,7 @@ public class StreamsCalculateTotalCost {
 
     int calculateTotalCostOfAllGadgets(List<Product> products) {
         return products.stream()
+                .filter(w -> w.getCategory())
                 .mapToInt(Product::getPrice)
                 .sum();
     }
