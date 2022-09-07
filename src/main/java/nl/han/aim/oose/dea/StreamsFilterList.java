@@ -20,7 +20,7 @@ public class StreamsFilterList {
     List<String> filterStringsThatContainOnlyNumerals(List<String> input) {
 
         List<String> output = input.stream()
-                .filter(word -> )
+                .filter(word -> word.chars())
 
         return input;
 
